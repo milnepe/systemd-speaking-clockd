@@ -1,0 +1,11 @@
+[Unit]
+Description=Speaking Clock Daemon
+#After=time-sync.target
+
+[Service]
+Type=simple
+
+ExecStart=/usr/local/bin/speaking-clockd
+
+[Install]
+WantedBy=multi-user.target
